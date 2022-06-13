@@ -8,10 +8,11 @@ fi
 
 echo $1
 
-flutter pub get
-flutter build web
+#flutter pub get
+#flutter build web
 
 git add $1 -f
 git commit -m "web-build-$(date)"
 
-git subtree push --prefix build/web origin gh-pages
+git push origin --delete gh-pages
+git subtree push --prefix ./build/web/ origin gh-pages

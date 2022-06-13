@@ -21,4 +21,4 @@ git commit -m "web-build-$(date)"
 
 # git push origin --delete gh-pages
 git subtree push --prefix build_folder origin gh-pages
-# git push
+git push

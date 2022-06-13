@@ -15,6 +15,7 @@ mkdir -p build_folder
 cp -r $1. ./build_folder
 
 git add build_folder -f
+git add .
 git commit -m "web-build-$(date)"
 
 # git push origin --delete gh-pages

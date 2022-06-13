@@ -13,7 +13,7 @@ flutter build web
 
 rm -rf build_folder
 mkdir -p build_folder
-cp -r ./build/web/* ./build_folder
+cp -R ./build/web/ ./build_folder
 
 git add build_folder -f
 git add .

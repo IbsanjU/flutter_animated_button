@@ -49179,7 +49179,7 @@ c2(){this.eA()
 this.dg()
 this.iI()}}
 A.zE.prototype={
-O(a,b){return new A.qN(B.D6,"Flutter Demo",A.a5Q(null,B.po),null)}}
+O(a,b){return new A.qN(B.D6,"IbsanjU animated button",A.a5Q(null,B.po),null)}}
 A.ti.prototype={
 aF(){return new A.tR(null,null,B.n)}}
 A.tR.prototype={

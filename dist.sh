@@ -1,18 +1,19 @@
 #!/bin/sh
-if [ -z "$1" ]
-then
-  echo "Which folder do you want to deploy to GitHub Pages?"
-  echo "example: dist.sh ./build/web/"
-  exit 1
-fi
+# if [ -z "$1" ]
+# then
+#   echo "Which folder do you want to deploy to GitHub Pages?"
+#   echo "example: dist.sh ./build/web/"
+#   exit 1
+# fi
 
-echo $1
+# echo $1
 
-flutter pub get
-flutter build web
+#flutter pub get
+#flutter build web
 
+rm -rf build_folder
 mkdir -p build_folder
-cp -r $1. ./build_folder
+cp -r ./build/web/*.* ./build_folder
 
 git add build_folder -f
 git add .

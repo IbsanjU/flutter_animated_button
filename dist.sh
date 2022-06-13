@@ -14,4 +14,4 @@ flutter build web
 git add $1 -f
 git commit -m "web-build-$(date)"
 
-git subtree push --prefix $1 origin gh-pages
+git subtree push --prefix build/web origin gh-pages

@@ -16,9 +16,9 @@ mkdir -p build_folder
 cp -a ./build/web/. ./build_folder
 
 git add build_folder -f
-git add .
+# git add .
 git commit -m "web-build-$(date)"
 
 # git push origin --delete gh-pages
 git subtree push --prefix build_folder origin gh-pages
-git push
+# git push

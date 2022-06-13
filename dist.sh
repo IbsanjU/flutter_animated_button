@@ -8,8 +8,8 @@
 
 # echo $1
 
-#flutter pub get
-#flutter build web
+flutter pub get
+flutter build web
 
 rm -rf build_folder
 mkdir -p build_folder
@@ -21,3 +21,4 @@ git commit -m "web-build-$(date)"
 
 # git push origin --delete gh-pages
 git subtree push --prefix build_folder origin gh-pages
+git push
